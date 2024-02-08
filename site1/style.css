@@ -46,8 +46,8 @@ ul li a:hover {
 }
 
 .menu-list {
-    position: relative;
     display: flex;
+    align-items: center;
     list-style-type: none;
     gap: 0 100px;
     font-family: 'Roboto',Arial,sans-serif;
@@ -179,14 +179,6 @@ p {
 }
 
 @media screen and (max-width: 900px) {
-    .menu-list {
-        display: none;
-    }
-    
-    .header {
-        border: none;
-    }
-    
     .catalog-list {
         flex-direction: column;
         flex-wrap: wrap;
@@ -212,6 +204,14 @@ p {
     .catalog-but {
         width: 130px;
         height: 30px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .menu-list {
+        align-items: center;
+        flex-direction: column;
+        gap: 10px 100px;
     }
 }
 
